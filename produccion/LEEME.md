@@ -33,6 +33,7 @@ Copia la dirección de producción (la local `http://<IP>:3000` o la del túnel 
 
 ## Si algo falla
 
+- **No hagas clic ni selecciones texto en la ventana 1.** En la consola de Windows eso pausa la app y producción deja de responder sin mostrar error. Si pasa: Esc o Enter; si no se destraba, Ctrl + C y vuelve a correr `iniciar.ps1`. Para evitarlo: clic derecho en la barra de título → Propiedades → desmarca "Modo de edición rápida".
 - **"Producción caída" en rojo:** el último merge rompió algo. Se arregla con un Pull Request que lo corrija o lo revierta (`git revert`), no tocando este computador.
 - **Se cerró el túnel:** vuelve a abrirlo. La dirección cambia: pégala otra vez en la consola.
 - **Los datos de los pedidos** viven en `data/pideya.db` de este computador y sobreviven a los redespliegues. El inventario se recarga desde `db/seed.sql` cada vez que la app se reinicia.

@@ -14,7 +14,7 @@ copy .env.example .env
 npm start
 ```
 
-Abre http://localhost:3000. Para detener el servidor: `Ctrl + C` en la terminal.
+Abre http://localhost:3000. El servidor se reinicia solo cuando cambian `server.js`, `api/` o `db/` (por ejemplo, después de un `git pull`). Para detenerlo: `Ctrl + C` en la terminal.
 
 | Página | Para qué |
 |---|---|
